@@ -1,0 +1,17 @@
+.App-header {
+    height: 50px;
+    padding: 20px;
+  }
+  
+  .App-header a {
+    color: beige;
+    text-decoration: none;
+    margin: 10px;
+  }
+  
+  .App-menu {
+    color: beige;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 1.5em;
+  }

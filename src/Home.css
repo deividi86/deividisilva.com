@@ -1,0 +1,24 @@
+.who {
+margin: 1rem 0;
+line-height: 1.8;
+}
+
+.why {
+margin: 1rem 0;
+line-height: 1.8;
+}
+
+.where {
+margin: 1rem 0;
+line-height: 1.8;
+}
+
+.where a {
+color: beige;
+text-decoration: none
+}
+
+.photo {
+width: 25%;
+height: 25%;
+}
