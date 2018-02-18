@@ -4,13 +4,13 @@
   }
   
   .App-header a {
-    color: beige;
+    color: black;
     text-decoration: none;
     margin: 10px;
   }
   
   .App-menu {
-    color: beige;
+    color: black;
     display: flex;
     flex-direction: row-reverse;
     font-size: 1.5em;
