@@ -1,20 +1,41 @@
-.who {
-margin: 1rem 0;
-line-height: 1.8;
+.photo {
+    width: 50%;
+    border-radius: 50%;
 }
 
+.who {
+    margin: 1rem 0;
+    line-height: 1.2;
+}
 
 .what {
-margin: 1rem 0;
-line-height: 1.8;
+    margin: 1rem 0;
+    line-height: 1.2;
 }
 
 .what a {
-color: black;
-text-decoration: none
+    color: black;
+    text-decoration: none
 }
 
-.photo {
-width: 25%;
-height: 25%;
+@media only screen and (min-width: 768px) {
+    .photo {
+        max-width: 25%;
+        height: auto;
+        border-radius: 50%;
+    }
+    .who {
+        margin: 1rem 0;
+        line-height: 1.8;
+    }
+    
+    .what {
+        margin: 1rem 0;
+        line-height: 1.8;
+    }
+    
+    .what a {
+        color: black;
+        text-decoration: none
+    }
 }
