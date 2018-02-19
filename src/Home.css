@@ -1,3 +1,17 @@
+.social {
+    margin: 1rem 0;
+    line-height: 1.2;
+}
+
+.professional {
+    margin: 1rem 0;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}   
+
 .photo {
     width: 50%;
     border-radius: 50%;
