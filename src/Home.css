@@ -3,6 +3,20 @@
     line-height: 1.2;
 }
 
+.fa {
+    padding: 5px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    display: inline-block;
+    color: black;
+  }  
+  .fa:hover {
+    opacity: 0.7;
+  }
+
 .professional {
     margin: 1rem 0;
     line-height: 1.2;
@@ -18,23 +32,22 @@
 }
 
 .who {
-    margin: 1rem 0;
     line-height: 1.2;
 }
 
 .what {
-    margin: 1rem 0;
     line-height: 1.2;
 }
 
 .what a {
     color: black;
-    text-decoration: none
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 @media only screen and (min-width: 768px) {
     .photo {
-        max-width: 25%;
+        max-width: 15%;
         height: auto;
         border-radius: 50%;
     }
