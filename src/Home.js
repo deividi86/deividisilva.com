@@ -21,14 +21,13 @@ export default function Home() {
             </div>
             <div className="professional">
                 <a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2017-05-10&ci=AWS00257056" alt="AWS certified architect"><img src="/architect.png" alt="I am an AWS certified architect" /></a>
-                <a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2017-04-12&ci=AWS00257056" alt="AWS certified developer"><img src="/developer.png" alt="I am an AWS certified developer" /></a>
-                <a href="https://www.codementor.io/deividisilva?utm_source=github&utm_medium=button&utm_term=deividisilva&utm_campaign=github"><img src="https://cdn.codementor.io/badges/i_am_a_codementor_light.svg" alt="I am a codementor" /></a>
+                <a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2017-04-12&ci=AWS00257056" alt="AWS certified developer"><img src="/developer.png" alt="I am an AWS certified developer" /></a>                
             </div>
             <p className="who">
-                Hi! My name is Deividi Silva and I'm a software engineer from Brazil.
+                Hi! My name is Deividi Silva and I'm a software development manager from Brazil.
             </p>
             <p className="what">
-                I love creating software solutions that help people's life. By day I'm currently working for Whirpool S.A - Embraco compressors as the product owner and cloud specialist building an <a href="http://www.diili.com.br">awesome IoT solution</a>.       
+                I love creating software solutions that help people's life. Nowadays I do that by being a manager that enables teams to fully develop their potential and have lot of fun while doing it!       
             </p>
         </section>
     )
