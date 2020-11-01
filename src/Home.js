@@ -24,10 +24,8 @@ export default function Home() {
                 <a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2017-04-12&ci=AWS00257056" alt="AWS certified developer"><img src="/developer.png" alt="I am an AWS certified developer" /></a>                
             </div>
             <p className="who">
-                Hi! My name is Deividi Silva and I'm a software development manager from Brazil.
-            </p>
-            <p className="what">
-                I love creating software solutions that help people's life. Nowadays I do that by being a manager that enables teams to fully develop their potential and have lot of fun while doing it!       
+            Welcome! I am Deividi Silva and I'm a software development manager from Brazil. With over 10 years of professional experience, I've worked as a software engineer, solutions architect and in the last
+             3 years as a software development manager. Most recently I managed AWS DynamoDB Metadata team develering amazing new datastore solutions, with throughput over 325 million requests per second and 6 9's of avalability.
             </p>
         </section>
     )
