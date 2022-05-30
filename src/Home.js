@@ -19,13 +19,8 @@ export default function Home() {
                     <i className="fa fa-envelope" aria-hidden></i>
                 </a>
             </div>
-            <div className="professional">
-                <a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2017-05-10&ci=AWS00257056" alt="AWS certified architect"><img src="/architect.png" alt="I am an AWS certified architect" /></a>
-                <a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2017-04-12&ci=AWS00257056" alt="AWS certified developer"><img src="/developer.png" alt="I am an AWS certified developer" /></a>                
-            </div>
             <p className="who">
-            Welcome! I am Deividi Silva and I'm a software development manager from Brazil. With over 10 years of professional experience, I've worked as a software engineer, solutions architect and in the last
-             3 years as a software development manager. Most recently I managed AWS DynamoDB Metadata team develering amazing new datastore solutions, with throughput over 325 million requests per second and 6 9's of avalability.
+            Deividi Silva, Software Professional from Brazil.
             </p>
         </section>
     )
