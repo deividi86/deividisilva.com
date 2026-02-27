@@ -62,16 +62,43 @@
       animation: fadeIn 0.6s ease 0.1s both;
     }
 
-    .headshot {
-      width: 160px;
-      height: auto;
-      display: block;
-      filter: drop-shadow(0 0 20px rgba(10, 255, 157, 0.08));
-      transition: filter 0.3s;
+    .headshot-ring {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      padding: 3px;
+      background: linear-gradient(135deg, #0aff9d, #0a7a4d, #0aff9d);
+      background-size: 200% 200%;
+      animation: ringShift 6s ease infinite;
     }
 
-    .headshot:hover {
-      filter: drop-shadow(0 0 24px rgba(10, 255, 157, 0.15));
+    @keyframes ringShift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .headshot-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: #141414;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .headshot {
+      width: 115%;
+      height: auto;
+      display: block;
+      position: absolute;
+      top: -5%;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: transform 0.3s;
+    }
+
+    .headshot-ring:hover .headshot {
+      transform: translateX(-50%) scale(1.04);
     }
 
     .info {
@@ -169,16 +196,19 @@
         gap: 1.5rem;
       }
       .photo-col { justify-self: center; }
-      .tag { justify-content: center; }
       .links { justify-content: center; }
-      .headshot { width: 120px; height: 120px; }
+      .headshot-ring { width: 130px; height: 130px; }
     }
   </style>
 </head>
 <body>
   <main class="layout">
     <div class="photo-col">
-      <img src="headshot.png" alt="Deividi Silva" class="headshot" width="160">
+      <div class="headshot-ring">
+        <div class="headshot-inner">
+          <img src="headshot.png" alt="Deividi Silva" class="headshot">
+        </div>
+      </div>
     </div>
     <div class="info">
       <h1>Deividi Silva</h1>
