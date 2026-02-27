@@ -4,21 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Deividi Silva</title>
-  <meta name="description" content="Deividi Silva — Software engineer at <a href="https://teamcafeteria.com" target="_blank" rel="noopener">Cafeteria</a>, founder of DAPDEV Software Solutions.">
+  <meta name="description" content="Deividi Silva — Software engineer at Cafeteria, founder of DAPDEV Software Solutions. AI consultancy based in Brazil.">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
   <link rel="mask-icon" href="safari-pinned-tab.svg" color="#111111">
-  <meta name="theme-color" content="#111111">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
+    html { height: 100%; }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: #111;
-      color: #e0e0e0;
-      min-height: 100vh;
+      font-family: "DM Sans", sans-serif;
+      background: #0a0a0a;
+      color: #94908a;
+      min-height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -28,77 +33,119 @@
 
     .card {
       text-align: center;
-      max-width: 420px;
+      max-width: 480px;
       width: 100%;
+      animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .headshot-wrap {
+      width: 148px;
+      height: 148px;
+      margin: 0 auto 2rem;
+      border-radius: 50%;
+      padding: 2px;
+      background: linear-gradient(135deg, #2a2722, #1a1916);
+      animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
     }
 
     .headshot {
-      width: 160px;
-      height: 160px;
+      width: 100%;
+      height: 100%;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #333;
-      margin-bottom: 1.5rem;
+      display: block;
+      filter: grayscale(15%);
+      transition: filter 0.5s ease;
+    }
+
+    .headshot:hover {
+      filter: grayscale(0%);
     }
 
     h1 {
-      font-size: 1.6rem;
-      font-weight: 600;
-      color: #fff;
-      margin-bottom: 0.75rem;
+      font-family: "Instrument Serif", Georgia, serif;
+      font-size: 2.4rem;
+      font-weight: 400;
+      color: #ede9e3;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+      animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
     }
 
     .bio {
       font-size: 0.95rem;
-      line-height: 1.6;
-      color: #aaa;
-      margin-bottom: 1.75rem;
+      line-height: 1.75;
+      color: #7a766f;
+      margin-bottom: 2.25rem;
+      font-weight: 400;
+      animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
     }
 
     .bio a {
-      color: #ccc;
+      color: #b8b2a8;
       text-decoration: none;
-      border-bottom: 1px solid #555;
-      transition: color 0.2s, border-color 0.2s;
+      border-bottom: 1px solid #33302b;
+      transition: color 0.3s, border-color 0.3s;
     }
 
     .bio a:hover {
-      color: #fff;
-      border-color: #fff;
+      color: #ede9e3;
+      border-color: #ede9e3;
+    }
+
+    .divider {
+      width: 32px;
+      height: 1px;
+      background: #2a2722;
+      margin: 0 auto 2rem;
+      animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.35s both;
     }
 
     .links {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 1.25rem;
+      gap: 1.5rem;
+      animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
     }
 
     .links a {
-      color: #888;
-      transition: color 0.2s;
+      color: #4a4740;
+      transition: color 0.3s, transform 0.3s;
       display: flex;
       align-items: center;
     }
 
-    .links a:hover { color: #fff; }
+    .links a:hover {
+      color: #ede9e3;
+      transform: translateY(-2px);
+    }
 
     .links svg {
-      width: 22px;
-      height: 22px;
+      width: 20px;
+      height: 20px;
       fill: currentColor;
     }
   </style>
 </head>
 <body>
   <main class="card">
-    <img src="headshot.jpeg" alt="Deividi Silva" class="headshot" width="160" height="160">
+    <div class="headshot-wrap">
+      <img src="headshot.jpeg" alt="Deividi Silva" class="headshot" width="148" height="148">
+    </div>
     <h1>Deividi Silva</h1>
     <p class="bio">
-      Software engineer at <a href="https://teamcafeteria.com" target="_blank" rel="noopener">Cafeteria</a>, founder of
+      Software engineer at
+      <a href="https://teamcafeteria.com" target="_blank" rel="noopener">Cafeteria</a>, founder of
       <a href="https://dapdev.tech" target="_blank" rel="noopener">DAPDEV Software Solutions</a>
-      — AI consultancy building production-ready AI applications. Based in Brazil.
+      &mdash; AI consultancy building production-ready AI applications. Based in Brazil.
     </p>
+    <div class="divider"></div>
     <nav class="links">
       <a href="https://github.com/deividi86" aria-label="GitHub" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.31-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6.02 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18a4.65 4.65 0 0 1 1.24 3.22c0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22l-.01 3.29c0 .31.22.69.83.57A12 12 0 0 0 12 .3"/></svg>
