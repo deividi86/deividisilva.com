@@ -87,7 +87,7 @@ time, .draft, .tags li {
 .prose li + li { margin-top: 0.5rem; }
 .prose li::marker { color: var(--accent); }
 .prose blockquote { border-left: 2px solid var(--accent); padding-left: 1rem; color: var(--muted); }
-.prose code { font-family: var(--mono); font-size: 0.88em; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 0.1em 0.35em; }
+.prose code { font-family: var(--mono); font-variant-ligatures: none; font-size: 0.88em; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 0.1em 0.35em; }
 .prose pre { border: 1px solid var(--border); border-radius: 6px; padding: 1rem; overflow-x: auto; font-size: 0.85rem; line-height: 1.55; }
 .prose pre code { background: none; border: 0; padding: 0; font-size: inherit; }
 .prose hr { border: 0; border-top: 1px solid var(--border); }

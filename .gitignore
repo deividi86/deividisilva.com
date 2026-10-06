@@ -4,3 +4,4 @@ node_modules
 dist
 .astro
 .wrangler
+.playwright-mcp
